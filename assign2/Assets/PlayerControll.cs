@@ -4,6 +4,8 @@ using System.Collections;
 public class PlayerControll : MonoBehaviour {
 
 	public float moveSpeed = 0.5f;
+	public bool grounded = true;
+    public float jumpPower = 15;
 
 	// Use this for initialization
 	void Start () {
@@ -18,14 +20,17 @@ public class PlayerControll : MonoBehaviour {
 		if(Input.GetAxis("Horizontal")<0){
 			tempPosition.x -= moveSpeed;
 		}
-		if(Input.GetAxis("Vertical")<0){
-			tempPosition.y -= moveSpeed;
-		}
-		if(Input.GetAxis("Vertical")>0){
-			tempPosition.y += moveSpeed;
-		}
+		
 
 		transform.position = tempPosition;
+		
+		if(!grounded && GetComponent<Rigidbody2D>().velocity.y == 0) {
+         grounded = true;
+     	}
+   		if (Input.GetButtonDown("Jump") && grounded == true) {
+         GetComponent<Rigidbody2D>().AddForce(transform.up*jumpPower);
+         grounded = false;
+     	}
 
 	}
 }

@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Temp/Compiled-shader.shader">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../lab02/HelloWorld/Assets/PeachTexture.cs">
     <Files>
-      <File FileName="Temp/Compiled-shader.shader" Line="5" Column="16" />
-      <File FileName="Assets/shader.shader" Line="1" Column="16" />
+      <File FileName="../lab02/HelloWorld/Assets/PeachTexture.cs" Line="22" Column="126" />
+      <File FileName="Assets/shader.shader" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

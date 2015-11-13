@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\BackgroundRenderer.cs" />
+     <Compile Include="Assets\CanvasController.cs" />
      <Compile Include="Assets\PlayerControll.cs" />
      <Compile Include="Assets\TriggerHandler.cs" />
      <None Include="Assets\shader.shader" />

@@ -7,6 +7,7 @@ public class PlayerControll : MonoBehaviour {
 	public bool grounded = true;
     public float jumpPower = 15;
 
+
 	// Use this for initialization
 	void Start () {
 	}
